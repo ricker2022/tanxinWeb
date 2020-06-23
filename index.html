@@ -1,0 +1,482 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>探心APP</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="探心APP" />
+    <meta property="og:site_name" content="探心APP" />
+    <meta property="og:locale" content="zh-CN" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="探心APP" />
+    <meta name="keywords" content="tanxin,探心社交,APP" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="description" content="探寻心跳的感觉" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="src/css/animate.min.css" />
+    <link rel="stylesheet" href="src/css/index.css?d=20200623" />
+    <script type="text/javascript">  
+      window.onload = function () {
+        var winHeight = window.innerHeight;
+        var isWeixin;
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+          isWeixin = true;
+        } else {
+          isWeixin = false;
+        }
+        if (isWeixin) {
+          document.getElementById("weixin-tip").style.height = winHeight;
+          document.getElementById("weixin-tip").style.display = 'none';
+        }
+        console.log("lanch on weixin:", isWeixin);
+      }
+      
+    </script>
+  </head>
+
+  <body>
+    <div class="loading">Loading&#8230;</div>
+
+    <div id="wrap" class="container">
+      <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+              >
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">
+                <div class="logo">
+                  <img src="src/img/logoWhite.png" />
+                </div>
+                <div class="logo-name">
+                  <span class="main-name">探心社交</span>
+                  <p class="sec-name">tanxin.club</p>
+                </div>
+              </a>
+            </div>
+            <!-- 手機隱藏選單區 -->
+            <div class="collapse navbar-collapse navbar-collapse">
+              <!-- 右選單 -->
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a class="mainPage" href="/">首页</a></li>
+                <li><a class="supportPage" href="support">支持服务</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    >简体中文(zh-CN) <b class="caret"></b
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-menu-a-cn"
+                        href="javascript:;"
+                        data-lan="zh_CN"
+                        >简体中文(zh-CN)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-menu-a-hk"
+                        href="javascript:;"
+                        data-lan="zh_HK"
+                        >繁體中文(zh-HK)</a
+                      >
+                    </li>
+                    <!-- <li>
+                      <a
+                        class="dropdown-menu-a-en"
+                        href="javascript:;"
+                        data-lan="en_US"
+                        >English(EN)</a
+                      >
+                    </li> -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- 手機隱藏選單區結束 -->
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container-fluid topArea">
+      <div class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-7 col-md-6">
+              <div class="row">
+                <div class="topArea-img">
+                  <img id="topAreaImg" src="src/img/mainPic_cn.png" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="visible-sm visible-md visible-lg col-xs-12 col-sm-5 col-md-6"
+            >
+              <div class="row">
+                <div class="topArea-txt">
+                  <div
+                    class="topArea-logo animate__animated animation__delay__1s animate__flipInX"
+                  >
+                    <img src="src/img/logoWhite.png" />
+                  </div>
+                  <div class="topArea-link">
+                    <span class="col-xs-12 topArea-link-span"
+                      ><div
+                        class="row animate__animated animation__delay__2s animate__bounceInDown"
+                      >
+                        想要脱单，你的人脉就要广泛。
+                      </div></span
+                    >
+                    <!-- <a
+                      class="col-xs-12 col-md-3 topArea-link-a"
+                      href="#downloadArea"
+                      ><div class="row">立即下載</div></a
+                    > -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div id="downloadArea" class="col-sm-12 app-container">
+            <div class="row">
+              <div class="col-xs-12 col-lg-6">
+                <div class="row">
+                  <div class="app-info">
+                    <span class="app-mainTitle">探心APP</span>
+                    <span id="ityped" class="app-secTitle"></span>
+                  </div>
+
+                  <div class="visible-lg app-qrCode">
+                    <div class="app-qrCode-img">
+                      <img
+                        src="data:image/png;base64,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"
+                      />
+                    </div>
+                    <div class="app-qrCode-txt">手机扫码下载</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-lg-6 app-download">
+                <div
+                  class="col-xs-12 app-download-iOS app-downloadBtn"
+                  data-toggle="modal"
+                  data-target="#myModal"
+                >
+                  <i aria-label="icon: apple">
+                    <svg
+                      viewBox="64 64 896 896"
+                      data-icon="apple"
+                      width="5rem"
+                      height="5rem"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-10.6 267c-14.3 19.9-28.7 35.6-41.9 45.7-10.5 8-18.6 11.4-24 11.6-9-.1-17.7-2.3-34.7-8.8-1.2-.5-2.5-1-4.2-1.6l-4.4-1.7c-17.4-6.7-27.8-10.3-41.1-13.8-18.6-4.8-37.1-7.4-56.9-7.4-20.2 0-39.2 2.5-58.1 7.2-13.9 3.5-25.6 7.4-42.7 13.8-.7.3-8.1 3.1-10.2 3.9-3.5 1.3-6.2 2.3-8.7 3.2-10.4 3.6-17 5.1-22.9 5.2-.7 0-1.3-.1-1.8-.2-1.1-.2-2.5-.6-4.1-1.3-4.5-1.8-9.9-5.1-16-9.8-14-10.9-29.4-28-45.1-49.9-27.5-38.6-53.5-89.8-66-125.7-15.4-44.8-23-87.7-23-128.6 0-60.2 17.8-106 48.4-137.1 26.3-26.6 61.7-41.5 97.8-42.3 5.9.1 14.5 1.5 25.4 4.5 8.6 2.3 18 5.4 30.7 9.9 3.8 1.4 16.9 6.1 18.5 6.7 7.7 2.8 13.5 4.8 19.2 6.6 18.2 5.8 32.3 9 47.6 9 15.5 0 28.8-3.3 47.7-9.8 7.1-2.4 32.9-12 37.5-13.6 25.6-9.1 44.5-14 60.8-15.2 4.8-.4 9.1-.4 13.2-.1 22.7 1.8 42.1 6.3 58.6 13.8-37.6 43.4-57 96.5-56.9 158.4-.3 14.7.9 31.7 5.1 51.8 6.4 30.5 18.6 60.7 37.9 89 14.7 21.5 32.9 40.9 54.7 57.8-11.5 23.7-25.6 48.2-40.4 68.8zm-94.5-572c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span class="app-download-txt app-appDownloadiOS"
+                    >苹果端客户下载</span
+                  >
+                </div>
+                <div class="col-xs-12 app-download-Android app-downloadBtn">
+                  <i aria-label="icon: android">
+                    <svg
+                      viewBox="64 64 896 896"
+                      data-icon="android"
+                      width="5rem"
+                      height="5rem"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M448.3 225.2c-18.6 0-32 13.4-32 31.9s13.5 31.9 32 31.9c18.6 0 32-13.4 32-31.9.1-18.4-13.4-31.9-32-31.9zm393.9 96.4c-13.8-13.8-32.7-21.5-53.2-21.5-3.9 0-7.4.4-10.7 1v-1h-3.6c-5.5-30.6-18.6-60.5-38.1-87.4-18.7-25.7-43-47.9-70.8-64.9l25.1-35.8v-3.3c0-.8.4-2.3.7-3.8.6-2.4 1.4-5.5 1.4-8.9 0-18.5-13.5-31.9-32-31.9-9.8 0-19.5 5.7-25.9 15.4l-29.3 42.1c-30-9.8-62.4-15-93.8-15-31.3 0-63.7 5.2-93.8 15L389 79.4c-6.6-9.6-16.1-15.4-26-15.4-18.6 0-32 13.4-32 31.9 0 6.2 2.5 12.8 6.7 17.4l22.6 32.3c-28.7 17-53.5 39.4-72.2 65.1-19.4 26.9-32 56.8-36.7 87.4h-5.5v1c-3.2-.6-6.7-1-10.7-1-20.3 0-39.2 7.5-53.1 21.3-13.8 13.8-21.5 32.6-21.5 53v235c0 20.3 7.5 39.1 21.4 52.9 13.8 13.8 32.8 21.5 53.2 21.5 3.9 0 7.4-.4 10.7-1v93.5c0 29.2 23.9 53.1 53.2 53.1H331v58.3c0 20.3 7.5 39.1 21.4 52.9 13.8 13.8 32.8 21.5 53.2 21.5 20.3 0 39.2-7.5 53.1-21.3 13.8-13.8 21.5-32.6 21.5-53v-58.2H544v58.1c0 20.3 7.5 39.1 21.4 52.9 13.8 13.8 32.8 21.5 53.2 21.5 20.4 0 39.2-7.5 53.1-21.6 13.8-13.8 21.5-32.6 21.5-53v-58.2h31.9c29.3 0 53.2-23.8 53.2-53.1v-91.4c3.2.6 6.7 1 10.7 1 20.3 0 39.2-7.5 53.1-21.3 13.8-13.8 21.5-32.6 21.5-53v-235c-.1-20.3-7.6-39-21.4-52.9zM246 609.6c0 6.8-3.9 10.6-10.7 10.6-6.8 0-10.7-3.8-10.7-10.6V374.5c0-6.8 3.9-10.6 10.7-10.6 6.8 0 10.7 3.8 10.7 10.6v235.1zm131.1-396.8c37.5-27.3 85.3-42.3 135-42.3s97.5 15.1 135 42.5c32.4 23.7 54.2 54.2 62.7 87.5H314.4c8.5-33.4 30.5-64 62.7-87.7zm39.3 674.7c-.6 5.6-4.4 8.7-10.5 8.7-6.8 0-10.7-3.8-10.7-10.6v-58.2h21.2v60.1zm202.3 8.7c-6.8 0-10.7-3.8-10.7-10.6v-58.2h21.2v60.1c-.6 5.6-4.3 8.7-10.5 8.7zm95.8-132.6H309.9V364h404.6v399.6zm85.2-154c0 6.8-3.9 10.6-10.7 10.6-6.8 0-10.7-3.8-10.7-10.6V374.5c0-6.8 3.9-10.6 10.7-10.6 6.8 0 10.7 3.8 10.7 10.6v235.1zM576.1 225.2c-18.6 0-32 13.4-32 31.9s13.5 31.9 32 31.9c18.6 0 32.1-13.4 32.1-32-.1-18.6-13.4-31.8-32.1-31.8z"
+                      ></path>
+                    </svg>
+                  </i>
+                  <span class="app-download-txt app-appDownloadAndioid"
+                    >安卓客户端下载</span
+                  >
+                </div>
+                <!-- <div class="openAlert"></div> -->
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-xs-12 info-container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="row">
+                  <div class="info-img">
+                    <img
+                      id="infoImg1"
+                      class="animate__animated animate__fadeInLeft"
+                      src="src/img/info1_cn.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xs-12 col-sm-6 col-md-6 col-lg-6 info-container-txt infoTxt1"
+              >
+                <div class="row">
+                  <h2
+                    class="animate__animated animation__delay__2s animate__fadeInUp"
+                  >
+                    探心APP介紹
+                  </h2>
+                  <div
+                    class="animate__animated animation__delay__4s animate__flipInX"
+                  >
+                    <p>探心是一款快速高效认识新朋友的交友软件。</p>
+                    <p>有趣的人在这等你。</p>
+                    <p>发动态发照片展示自我，让大家更了解你。</p>
+                    <p>发约会更加轻松高效交友。</p>
+                    <p>探心里的相遇更为有趣。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 info-container">
+            <div class="row">
+              <div
+                class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-push-6 col-md-push-6 col-lg-push-6"
+              >
+                <div class="row">
+                  <div class="info-img">
+                    <img
+                      id="infoImg2"
+                      class="img-thumbnail animate__animated animation__delay__1s animate__fadeInRight"
+                      src="src/img/info2_cn.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-sm-pull-6 col-md-pull-6 col-lg-pull-6 info-container-txt infoTxt2"
+              >
+                <div class="row">
+                  <h2
+                    class="animate__animated animation__delay__3s animate__fadeInUp"
+                  >
+                    探心APP特点
+                  </h2>
+                  <div
+                    class="animate__animated animation__delay__5s animate__flipInX"
+                  >
+                    <p>【附近】浏览附近的人，发现身边有趣的人</p>
+                    <p>【动态】发布文字或图片动态，展示自己，聊天不尴尬</p>
+                    <p>【约会】发布约会快速见到兴趣相投的人</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="default-footer">
+      <div class="container">
+        <div class="bottom-bar">
+          <span class="footer-companyName">深圳市卡迪帝科技有限公司</span>
+          <span class="heart">♥</span>
+          <span>
+            <a
+              href="http://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="footer-icp">粤ICP备20022749号</span></a
+            >
+            <a href="privacy">
+              <span class="footer-privacy">隐私政策</span></a
+            >
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <div id="weixin-tip"><img id="live_img" src="https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/live_weixin.png" alt=""></div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <!-- <h4 class="modal-title">Modal Header</h4> -->
+          </div>
+          <div class="modal-body">
+            <p class="text-center" style="font-size:2rem;">敬请期待!!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src=".//src/js/index.js"></script> -->
+
+    <script>
+      $(document).ready(function() {
+        // 下載區
+        $(".app-download-Android").click(function() {
+          var isWeixin;
+          var path ="https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/release/website/tanxin-cn.apk";
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+              isWeixin = true;
+            } else {
+              isWeixin = false;
+            }
+            if (isWeixin) {
+              document.getElementById("weixin-tip").style.display = "block";
+            } else {
+              window.open(path, "_blank"); // 新窗口打开外链接
+            }
+          return false;
+        });
+
+        $(".app-download-iOS").click(function() {
+          window.open("https://apps.apple.com/cn/app/id1510492549");
+          return false;
+        });
+
+        //載入對應的css
+        var head = document.getElementsByTagName("HEAD").item(0);
+        var style = document.createElement("link");
+        var langCss = "cn";
+        style.href = "src/css/autoTyped_" + langCss + ".css";
+        style.rel = "stylesheet";
+        style.type = "text/css";
+        head.appendChild(style);
+
+        $(".dropdown-menu li a").click(function() {
+          var langCss = $(this)
+            .attr("data-lan")
+            .split("_");
+
+          var head = document.getElementsByTagName("HEAD").item(0);
+          var style = document.createElement("link");
+          style.href = "src/css/autoTyped_" + langCss[1].toLowerCase() + ".css";
+          style.rel = "stylesheet";
+          style.type = "text/css";
+          head.appendChild(style);
+
+          if (langCss[1].toLowerCase() === "cn") {
+            $("link").each(function() {
+              if ($(this).attr("href") == "src/css/autoTyped_hk.css") {
+                $(this).remove();
+              }
+            });
+          } else if (langCss[1].toLowerCase() === "hk") {
+            $("link").each(function() {
+              if ($(this).attr("href") == "src/css/autoTyped_cn.css") {
+                $(this).remove();
+              }
+            });
+          }
+
+          if (langCss[1].toLowerCase() === "cn") {
+            $(".dropdown-toggle").html("简体中文(zh-CN) <b class='caret'></b>");
+            $(".sr-only").text("选单切换");
+            $(".mainPage").text("首页");
+            $(".supportPage").text("支持服务");
+            $("#topAreaImg").attr("src", "src/img/mainPic_cn.png");
+            $(".topArea-link-span > div").text("想要脱单，你的人脉就要广泛。");
+            $(".app-qrCode-txt").text("手机扫码下载");
+            $(".app-appDownloadiOS").text("苹果端客户下载");
+            $(".app-appDownloadAndioid").text("安卓客户端下载");
+            $(".modal-body > p").text("敬请期待!!");
+            $("#infoImg1").attr("src", "src/img/info1_cn.jpg");
+            $(".infoTxt1 > div >  h2").text("探心APP介紹");
+            $(".infoTxt1 > div >  div").html(
+              "<p>探心是一款快速高效认识新朋友的交友软件。</p><p>有趣的人在这等你。</p><p>发动态发照片展示自我，让大家更了解你。</p><p>发约会更加轻松高效交友。</p><p>探心里的相遇更为有趣。</p>"
+            );
+            $("#infoImg2").attr("src", "src/img/info2_cn.jpg");
+            $(".infoTxt2 > div >  h2").text("探心APP特点");
+            $(".infoTxt2 > div >  div").html(
+              "<p>【附近】浏览附近的人，发现身边有趣的人</p><p>【动态】发布文字或图片动态，展示自己，聊天不尴尬</p><p>【约会】发布约会快速见到兴趣相投的人</p>"
+            );
+            $(".footer-companyName").text("深圳市卡迪帝科技有限公司");
+            $(".footer-icp").text("粤ICP备20022749号");
+            $(".footer-privacy").text("隐私政策");
+          } else if (langCss[1].toLowerCase() === "hk") {
+            $(".dropdown-toggle").html("繁體中文(zh-HK) <b class='caret'></b>");
+            $(".sr-only").text("選單切換");
+            $(".mainPage").text("首頁");
+            $(".supportPage").text("支持服務");
+            $("#topAreaImg").attr("src", "src/img/mainPic_hk.png");
+            $(".topArea-link-span > div").text("想要脫單，你的人脈就要廣泛。");
+            $(".app-qrCode-txt").text("手機掃碼下載");
+            $(".app-appDownloadiOS").text("蘋果客戶端下載");
+            $(".app-appDownloadAndioid").text("安卓客戶端下載");
+            $(".modal-body > p").text("敬請期待!!");
+            $("#infoImg1").attr("src", "src/img/info1_hk.jpg");
+            $(".infoTxt1 > div >  h2").text("探心APP介紹");
+            $(".infoTxt1 > div >  div").html(
+              "<p>探心是一款快速高效認識新朋友的交友軟件。</p><p>有趣的人在這等你。</p><p>發動態發照片展示自我，讓大家更了解你。</p><p>發約會更加輕鬆高效交友。</p><p>探心裡的相遇更為有趣。</p>"
+            );
+            $("#infoImg2").attr("src", "src/img/info2_hk.jpg");
+            $(".infoTxt2 > div >  h2").text("探心APP特點");
+            $(".infoTxt2 > div >  div").html(
+              "<p>【附近】瀏覽附近的人，發現身邊有趣的人</p><p>【動態】發布文字或圖片動態，展示自己，聊天不尷尬</p><p>【約會】發布約會快速見到興趣相投的人</p>"
+            );
+            $(".footer-companyName").text("深圳市卡迪帝科技有限公司");
+            $(".footer-icp").text("粵ICP備20022749號");
+            $(".footer-privacy").text("隱私政策");
+          }
+        });
+
+        window.onload = function() {
+          $(".loading").fadeOut(1000);
+        };
+      });
+    </script>
+    
+  </body>
+</html>

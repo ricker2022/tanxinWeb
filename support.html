@@ -1,0 +1,182 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>探心APP</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="探心APP" />
+    <meta property="og:site_name" content="探心APP" />
+    <meta property="og:locale" content="zh-CN" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="探心APP" />
+    <meta name="keywords" content="tanxin,探心社交,APP" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="description" content="探寻心跳的感觉" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="src/css/animate.min.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+  </head>
+
+  <body>
+    <div id="wrap" class="container">
+      <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+              >
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">
+                <div class="logo">
+                  <img src="src/img/logoWhite.png" />
+                </div>
+                <div class="logo-name">
+                  <span class="main-name">探心社交</span>
+                  <p class="sec-name">tanxin.club</p>
+                </div>
+              </a>
+            </div>
+            <!-- 手機隱藏選單區 -->
+            <div class="collapse navbar-collapse navbar-collapse">
+              <!-- 右選單 -->
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="mainPage" href="/">首页</a></li>
+                <li class="active">
+                  <a class="supportPage" href="support.html">支持服务</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    >简体中文(zh-CN) <b class="caret"></b
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-menu-a-cn"
+                        href="javascript:;"
+                        data-lan="zh_CN"
+                        >简体中文(zh-CN)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-menu-a-hk"
+                        href="javascript:;"
+                        data-lan="zh_HK"
+                        >繁體中文(zh-HK)</a
+                      >
+                    </li>
+                    <!-- <li>
+                      <a
+                        class="dropdown-menu-a-en"
+                        href="javascript:;"
+                        data-lan="en_US"
+                        >English(EN)</a
+                      >
+                    </li> -->
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- 手機隱藏選單區結束 -->
+          </div>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="col-xs-12 text-center support-container">
+          <h3 class="supportTitle_Contact">联系我们</h3>
+          <br />
+          <br />
+          <h4 class="supportTitle_Business">商务合作</h4>
+          <p>
+            <a href="mailto:marketing@tanxin.club">marketing@tanxin.club</a>
+          </p>
+          <br />
+          <h4 class="supportTitle_Service">用户服务</h4>
+          <p><a href="mailto:support@tanxin.club">support@tanxin.club</a></p>
+        </div>
+      </div>
+    </main>
+    <footer id="default-footer">
+      <div class="container">
+        <div class="bottom-bar">
+          <span class="footer-companyName">深圳市卡迪帝科技有限公司</span>
+          <span class="heart">♥</span>
+          <span>
+            <a
+              href="http://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="footer-icp">粤ICP备20022749号</span></a
+            >
+            <a href="privacy.html">
+              <span class="footer-privacy">隐私政策</span></a
+            >
+          </span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $(".dropdown-menu li a").click(function() {
+          var langCss = $(this)
+            .attr("data-lan")
+            .split("_");
+
+          if (langCss[1].toLowerCase() === "cn") {
+            $(".dropdown-toggle").html("简体中文(zh-CN) <b class='caret'></b>");
+            $(".sr-only").text("选单切换");
+            $(".mainPage").text("首页");
+            $(".supportPage").text("支持服务");
+            $(".footer-companyName").text("深圳市卡迪帝科技有限公司");
+            $(".footer-icp").text("粤ICP备20022749号");
+            $(".footer-privacy").text("隐私政策");
+            $(".supportTitle_Contact").text("联系我们");
+            $(".supportTitle_Business").text("商务合作");
+            $(".supportTitle_Service").text("用户服务");
+          } else if (langCss[1].toLowerCase() === "hk") {
+            $(".dropdown-toggle").html("繁體中文(zh-HK) <b class='caret'></b>");
+            $(".sr-only").text("選單切換");
+            $(".mainPage").text("首頁");
+            $(".supportPage").text("支持服務");
+            $(".footer-companyName").text("深圳市卡迪帝科技有限公司");
+            $(".footer-icp").text("粵ICP備20022749號");
+            $(".footer-privacy").text("隱私政策");
+            $(".supportTitle_Contact").text("聯繫我們");
+            $(".supportTitle_Business").text("商務合作");
+            $(".supportTitle_Service").text("用戶服務");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
