@@ -358,7 +358,7 @@ footer .footer-privacy {
 }
 
 #weixin-tip {
-  display: block;
+  display: nono;
   position: fixed;
   left: 0;
   top: 0;
