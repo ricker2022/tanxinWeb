@@ -31,24 +31,6 @@
 
     <link rel="stylesheet" href="src/css/animate.min.css" />
     <link rel="stylesheet" href="src/css/index.css?d=20200623" />
-    <script type="text/javascript">  
-      window.onload = function () {
-        var winHeight = window.innerHeight;
-        var isWeixin;
-        var ua = navigator.userAgent.toLowerCase();
-        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
-          isWeixin = true;
-        } else {
-          isWeixin = false;
-        }
-        if (isWeixin) {
-          document.getElementById("weixin-tip").style.height = winHeight;
-          document.getElementById("weixin-tip").style.display = 'none';
-        }
-        console.log("lanch on weixin:", isWeixin);
-      }
-      
-    </script>
   </head>
 
   <body>
@@ -477,6 +459,23 @@
         };
       });
     </script>
-    
+    <script type="text/javascript">  
+      window.onload = function () {
+        var winHeight = window.innerHeight;
+        var isWeixin;
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+          isWeixin = true;
+        } else {
+          isWeixin = false;
+        }
+        if (isWeixin) {
+          document.getElementById("weixin-tip").style.height = winHeight;
+          document.getElementById("weixin-tip").style.display = 'none';
+        }
+        console.log("lanch on weixin:", isWeixin);
+      }
+      
+    </script>
   </body>
 </html>
