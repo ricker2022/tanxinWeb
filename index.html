@@ -360,7 +360,7 @@
             if (isWeixin) {
               $("#weixin-tip").show();
               $("html").css('position','fixed');
-              console.log($("html").css('position'));
+              alert($("html").css('position'));
             } else {
               window.open(path, "_blank"); // 新窗口打开外链接
             }
@@ -473,7 +473,7 @@
           $("html").css('position', 'initial');
           $("#weixin-tip").css('height',winHeight);
           $("#weixin-tip").hide();
-          console.log($("html").css('position'));
+          alert($("html").css('position'));
         }
         console.log("lanch on weixin:", isWeixin);
         };
