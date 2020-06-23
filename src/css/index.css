@@ -358,7 +358,7 @@ footer .footer-privacy {
 }
 
 #weixin-tip {
-  display: none;
+  display: block;
   position: fixed;
   left: 0;
   top: 0;
@@ -370,9 +370,10 @@ footer .footer-privacy {
   z-index: 999999999;
 }
 
-#weixin-tip img{
-  width: 100%;
+#live_img{
+  width: 90%;
   height: auto;
+  margin: 10px 5% 0;
 }
 
 #weixin-tip p {
