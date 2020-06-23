@@ -370,6 +370,11 @@ footer .footer-privacy {
   z-index: 999999999;
 }
 
+#weixin-tip img{
+  width: 100%;
+  height: auto;
+}
+
 #weixin-tip p {
   text-align: center;
   margin-top: 10%;
