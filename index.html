@@ -358,7 +358,8 @@
               isWeixin = false;
             }
             if (isWeixin) {
-              document.getElementById("weixin-tip").style.display = "block";
+              $("#weixin-tip").show();
+              $(html).css('position','fixed');
             } else {
               window.open(path, "_blank"); // 新窗口打开外链接
             }
@@ -458,11 +459,7 @@
 
         window.onload = function() {
           $(".loading").fadeOut(1000);
-        };
-      });
-    </script>
-    <script type="text/javascript">  
-      window.onload = function () {
+
         var winHeight = window.innerHeight;
         var isWeixin;
         var ua = navigator.userAgent.toLowerCase();
@@ -472,11 +469,13 @@
           isWeixin = false;
         }
         if (isWeixin) {
-          document.getElementById("weixin-tip").style.height = winHeight;
-          document.getElementById("weixin-tip").style.display = 'none';
+          $(html).css('position', 'initial');
+          $("#weixin-tip").css('height',winHeight);
+          $("#weixin-tip").hide();
         }
         console.log("lanch on weixin:", isWeixin);
-      }
+        };
+      });
     </script>
   </body>
 </html>
