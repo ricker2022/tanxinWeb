@@ -371,6 +371,11 @@
           return false;
         });
 
+        $("#weixin-tip").click(function() {
+          $("#weixin-tip").hide();
+          $("html").css('position','initial');
+        })
+
         //載入對應的css
         var head = document.getElementsByTagName("HEAD").item(0);
         var style = document.createElement("link");
