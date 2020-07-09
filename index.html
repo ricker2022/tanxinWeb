@@ -377,7 +377,7 @@
         var head = document.getElementsByTagName("HEAD").item(0);
         var style = document.createElement("link");
         var langCss = "cn";
-        style.href = "https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/cdn/css/autoTyped_" + langCss + ".min.css";
+        style.href = "src/css/autoTyped_" + langCss + ".min.css";
         style.rel = "stylesheet";
         style.type = "text/css";
         head.appendChild(style);
@@ -389,20 +389,20 @@
 
           var head = document.getElementsByTagName("HEAD").item(0);
           var style = document.createElement("link");
-          style.href = "https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/cdn/css/autoTyped_" + langCss[1].toLowerCase() + ".min.css";
+          style.href = "src/css/autoTyped_" + langCss[1].toLowerCase() + ".min.css";
           style.rel = "stylesheet";
           style.type = "text/css";
           head.appendChild(style);
 
           if (langCss[1].toLowerCase() === "cn") {
             $("link").each(function() {
-              if ($(this).attr("href") == "https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/cdn/css/autoTyped_hk.min.css") {
+              if ($(this).attr("href") == "src/css/autoTyped_hk.min.css") {
                 $(this).remove();
               }
             });
           } else if (langCss[1].toLowerCase() === "hk") {
             $("link").each(function() {
-              if ($(this).attr("href") == "https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/cdn/css/autoTyped_cn.min.css") {
+              if ($(this).attr("href") == "src/css/autoTyped_cn.min.css") {
                 $(this).remove();
               }
             });
