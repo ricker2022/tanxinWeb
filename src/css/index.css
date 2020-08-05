@@ -5,6 +5,7 @@ body {
   font-family: sans-serif;
   background-color: #fff;
   font-size: 1.4rem;
+  color:#560000;
 }
 .navbar-brand {
   width: auto;
@@ -13,7 +14,7 @@ body {
   border-bottom: 0px;
 }
 .navbar-default {
-  background: rgba(125, 83, 222, 1);
+  background:  #FF6687;
   border-bottom: 0px;
 }
 .navbar-toggle {
@@ -24,16 +25,16 @@ body {
 }
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-  color: #7d53de;
-  background-color: #78e3fd;
+  color: #FF6687;
+  background-color: #FFE277;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
-  /* color: #78e3fd;
+  /* color: #FFE277;
   background: rgba(255, 255, 255, 0); */
-  color: #7d53de;
-  background-color: #78e3fd;
+  color: #FF6687;
+  background-color: #FFE277;
 }
 .navbar-default .navbar-toggle {
   border-color: #fff;
@@ -47,36 +48,36 @@ body {
 }
 .navbar-default .navbar-toggle:focus .icon-bar,
 .navbar-default .navbar-toggle:hover .icon-bar {
-  background-color: #7d53de;
+  background-color: #FF6687;
 }
 .dropdown-menu {
   background: none;
-  background-color: #78e3fd;
+  background-color: #FFE277;
   box-shadow: none;
-  border: 3px #78e3fd solid;
+  border: 3px #FFE277 solid;
 }
 .dropdown-menu > li > a {
-  /* color: #78e3fd; */
-  color: #7d53de;
+  /* color: #FFE277; */
+  color: #FF6687;
 }
 .dropdown-menu > li:hover {
-  background: #78e3fd;
+  background: #FFE277;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #7d53de;
+  color: #FF6687;
 }
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover {
-  background: #7d53de;
-  color:#78e3fd;
+  background: #FF6687;
+  color:#FFE277;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-  color: #7d53de;
-  background-color: #78e3fd;
+  color: #FF6687;
+  background-color: #FFE277;
 }
 
 .logo {
@@ -106,7 +107,7 @@ body {
 .topArea {
   width: 100%;
   height: auto;
-  background: #7d53de;
+  background: #FF6687;
 }
 .topArea-img {
   position: relative;
@@ -118,7 +119,7 @@ body {
 .topArea-img img {
   width: 100%;
   height: auto;
-  max-width: 524px;
+  max-width: 600px;
 }
 
 .topArea-link-span > div {
@@ -128,13 +129,13 @@ body {
 }
 .topArea-logo {
   position: relative;
-  margin: 150px auto 50px;
+  margin: 160px auto 20px;
   width: 100%;
   text-align: center;
 }
 .topArea-logo img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 170px;
+  max-height: 170px;
 }
 .topArea-link {
   width: 100%;
@@ -154,8 +155,8 @@ body {
 }
 .topArea-link a:hover {
   background: #fff;
-  border: 2px #7d53de solid;
-  color: #7d53de;
+  border: 2px #FF6687 solid;
+  color: #FF6687;
 }
 main {
   min-height: 770px;
@@ -229,7 +230,7 @@ main .app-download {
 }
 main .app-downloadBtn {
   height: 60px;
-  background: #7d53de;
+  background: #FF6687;
   color: #fff;
   border-radius: 30px;
   cursor: pointer;
@@ -238,8 +239,8 @@ main .app-downloadBtn {
 }
 main .app-downloadBtn:hover,
 main .app-downloadBtn:focus {
-  background: #78e3fd;
-  color: #7d53de;
+  background: #FFE277;
+  color: #FF6687;
   transform: scale(1.05);
 }
 main .app-download-txt {
@@ -307,13 +308,13 @@ main .support-container h4 {
 }
 main .support-container p a {
   text-decoration: none;
-  color: #7d53de;
+  color: #FF6687;
 }
 main .support-container p a:hover,
 main .support-container p a:focus,
 main .support-container p a:active {
   text-decoration: none;
-  color: #78e3fd;
+  color: #FFE277;
 }
 
 footer {
@@ -324,7 +325,7 @@ footer {
   height: 120px;
   bottom: 0;
   text-align: center;
-  background-color: #7d53de;
+  background-color: #FF6687;
   color: #fff;
 }
 footer a {
@@ -332,7 +333,7 @@ footer a {
 }
 footer a:focus,
 footer a:hover {
-  color: #78e3fd;
+  color: #FFE277;
   text-decoration: none;
   cursor: pointer;
 }
@@ -347,7 +348,7 @@ footer span {
 }
 footer .heart {
   font-size: 3.5rem;
-  color: #78e3fd;
+  color: #FFE277;
   margin: 0px 20px;
 }
 
@@ -392,6 +393,16 @@ footer .footer-privacy {
   html {
     font-size: 7px;
   }
+  .topArea-logo {
+    position: relative;
+    margin: 130px auto 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .topArea-logo img {
+    max-width: 150px;
+    max-height: 150px;
+  }
   main .app-download {
     margin: 30px 0;
   }
@@ -402,7 +413,7 @@ footer .footer-privacy {
     font-size: 8px;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #78e3fd;
+    color: #FFE277;
   }
   main {
     min-height: auto;
