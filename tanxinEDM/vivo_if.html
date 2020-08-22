@@ -33,21 +33,11 @@
   </head>
 	<body>
 		<div id="dPageHolder">        	
-        	<div class="part1">
-            	<!-- <img class="img-responsive" src="img/1.jpg"/> -->
-        	</div>
-        	<div class="part2">
-            	<!-- <img class="img-responsive" src="img/2.jpg"/> -->
-        	</div>
-        	<div class="part3">
-            	<!-- <img class="img-responsive" src="img/3.jpg"/> -->
-        	</div>
-        	<div class="part4">
-            	<!-- <img class="img-responsive" src="img/4.jpg"/> -->
-        	</div>
-        	<div class="part5">
-            	<!-- <img class="img-responsive" src="img/5.jpg"/>            	 -->
-			</div>
+        	<div class="part1"></div>
+        	<div class="part2"></div>
+        	<div class="part3"></div>
+        	<div class="part4"></div>
+        	<div class="part5"></div>
 			
         	<div id="DownloadBtn" href="javascript:;" title="按此下载"></div>
 
@@ -68,5 +58,16 @@
 			
 		<script src="jquery.js"></script>
 		<script src="ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				$("#DownloadBtn").click(function(){
+					var src = 'https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/release/website/tanxin-cn.apk';
+					var iframe = document.createElement('iframe');
+					iframe.style.display = 'none';
+					iframe.src = "javascript: '<script>location.href=\"" + src + "\"<\/script>'";
+					document.getElementsByTagName('body')[0].appendChild(iframe);
+				});
+			})
+		</script>
 	</body>
 </html>
