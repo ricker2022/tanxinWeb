@@ -1,0 +1,73 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>探心社交</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="探心社交" />
+    <meta property="og:site_name" content="探心社交" />
+    <meta property="og:locale" content="zh-CN" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="探心社交" />
+    <meta name="keywords" content="tanxin,探心社交,APP" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="icon" href="img/icon192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="img/icon180.png" sizes="180x180">
+    <link rel="shortcut icon" href="img/icon64.ico">
+    <meta name="description" content="探寻心跳的感觉" />
+
+    <link
+      rel="stylesheet" href="ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!--[if lt IE 9]>
+		<script src="ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+	<body>
+		<div id="dPageHolder">        	
+        	<div class="part1"></div>
+        	<div class="part2"></div>
+        	<div class="part3"></div>
+        	<div class="part4"></div>
+        	<div class="part5"></div>
+			
+        	<div id="DownloadBtn" href="javascript:;" title="按此下载"></div>
+
+        	<div class="preload">
+				<img src="http://cdn.tanxin.club/website/ad/img/1.jpg"/>
+				<img src="http://cdn.tanxin.club/website/ad/img/2.jpg"/>
+				<img src="http://cdn.tanxin.club/website/ad/img/3.jpg"/>
+				<img src="http://cdn.tanxin.club/website/ad/img/4.jpg"/>
+				<img src="http://cdn.tanxin.club/website/ad/img/5.jpg"/>
+				<img src="http://cdn.tanxin.club/website/ad/img/h1.jpg"/>
+				<img src="http://cdn.tanxin.club/website/ad/img/h2.jpg"/>
+				<img src="http://cdn.tanxin.club/website/ad/img/h3.jpg"/>
+				<img src="http://cdn.tanxin.club/website/ad/img/h4.jpg"/>
+				<img src="http://cdn.tanxin.club/website/ad/img/h5.jpg"/>
+        		<img src="http://cdn.tanxin.club/website/ad/img/downloadBtn_active.png">
+        	</div>
+    	</div>
+			
+		<script src="jquery.js"></script>
+		<script src="ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				$("#DownloadBtn").click(function(){
+					var src = 'https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/release/website/tanxin-cn.apk';
+					var iframe = document.createElement('iframe');
+					iframe.style.display = 'none';
+					iframe.src = "javascript: '<script>location.href=\"" + src + "\"<\/script>'";
+					document.getElementsByTagName('body')[0].appendChild(iframe);
+				});
+			});
+		</script>
+	</body>
+</html>

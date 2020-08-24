@@ -1,0 +1,359 @@
+@charset "UTF-8";
+@-webkit-keyframes typed {
+  /* string 1, char 1 */
+  0%,
+  1.12513% {
+    content: "探";
+  }
+  /* string 1, char 2 */
+  1.12613%,
+  2.25125% {
+    content: "探寻";
+  }
+  /* string 1, char 3 */
+  2.25225%,
+  3.37738% {
+    content: "探寻心";
+  }
+  /* string 1, char 4 */
+  3.37838%,
+  4.5035% {
+    content: "探寻心跳";
+  }
+  /* string 1, char 5 */
+  4.5045%,
+  5.62963% {
+    content: "探寻心跳的";
+  }
+  /* string 1, char 6 */
+  5.63063%,
+  6.75576% {
+    content: "探寻心跳的感";
+  }
+  /* string 1, char 7 */
+  6.75676%,
+  7.88188% {
+    content: "探寻心跳的感觉";
+  }
+  /* string 1, char 8 */
+  7.88288%,
+  9.00801% {
+    content: "探寻心跳的感觉 ";
+  }
+  /* string 1, char 9 */
+  9.00901%,
+  33.55756% {
+    content: "探寻心跳的感觉 ♥";
+  }
+  /* string 1, char 10 */
+  33.55856%,
+  34.45846% {
+    content: "探寻心跳的感觉 ";
+  }
+  /* string 1, char 11 */
+  34.45946%,
+  35.35936% {
+    content: "探寻心跳的感觉";
+  }
+  /* string 1, char 12 */
+  35.36036%,
+  36.26026% {
+    content: "探寻心跳的感";
+  }
+  /* string 1, char 13 */
+  36.26126%,
+  37.16116% {
+    content: "探寻心跳的";
+  }
+  /* string 1, char 14 */
+  37.16216%,
+  38.06206% {
+    content: "探寻心跳";
+  }
+  /* string 1, char 15 */
+  38.06306%,
+  38.96296% {
+    content: "探寻心";
+  }
+  /* string 1, char 16 */
+  38.96396%,
+  39.86386% {
+    content: "探寻";
+  }
+  /* string 1, char 17 */
+  39.86486%,
+  40.76477% {
+    content: "探";
+  }
+  /* string 1, char 18 */
+  40.76577%,
+  52.02603% {
+    content: "​";
+  }
+  /* string 2, char 1 */
+  52.02703%,
+  53.15215% {
+    content: "E";
+  }
+  /* string 2, char 2 */
+  53.15315%,
+  54.27828% {
+    content: "En";
+  }
+  /* string 2, char 3 */
+  54.27928%,
+  55.40441% {
+    content: "Enj";
+  }
+  /* string 2, char 4 */
+  55.40541%,
+  56.53053% {
+    content: "Enjo";
+  }
+  /* string 2, char 5 */
+  56.53153%,
+  57.65666% {
+    content: "Enjoy";
+  }
+  /* string 2, char 6 */
+  57.65766%,
+  58.78278% {
+    content: "Enjoy ";
+  }
+  /* string 2, char 7 */
+  58.78378%,
+  83.33233% {
+    content: "Enjoy ☕";
+  }
+  /* string 2, char 8 */
+  83.33333%,
+  84.23323% {
+    content: "Enjoy ";
+  }
+  /* string 2, char 9 */
+  84.23423%,
+  85.13414% {
+    content: "Enjoy";
+  }
+  /* string 2, char 10 */
+  85.13514%,
+  86.03504% {
+    content: "Enjo";
+  }
+  /* string 2, char 11 */
+  86.03604%,
+  86.93594% {
+    content: "Enj";
+  }
+  /* string 2, char 12 */
+  86.93694%,
+  87.83684% {
+    content: "En";
+  }
+  /* string 2, char 13 */
+  87.83784%,
+  88.73774% {
+    content: "E";
+  }
+  /* string 2, char 14 */
+  88.73874%,
+  100% {
+    content: "​";
+  }
+}
+@keyframes typed {
+  /* string 1, char 1 */
+  0%,
+  1.12513% {
+    content: "探";
+  }
+  /* string 1, char 2 */
+  1.12613%,
+  2.25125% {
+    content: "探寻";
+  }
+  /* string 1, char 3 */
+  2.25225%,
+  3.37738% {
+    content: "探寻心";
+  }
+  /* string 1, char 4 */
+  3.37838%,
+  4.5035% {
+    content: "探寻心跳";
+  }
+  /* string 1, char 5 */
+  4.5045%,
+  5.62963% {
+    content: "探寻心跳的";
+  }
+  /* string 1, char 6 */
+  5.63063%,
+  6.75576% {
+    content: "探寻心跳的感";
+  }
+  /* string 1, char 7 */
+  6.75676%,
+  7.88188% {
+    content: "探寻心跳的感觉";
+  }
+  /* string 1, char 8 */
+  7.88288%,
+  9.00801% {
+    content: "探寻心跳的感觉 ";
+  }
+  /* string 1, char 9 */
+  9.00901%,
+  33.55756% {
+    content: "探寻心跳的感觉 ♥";
+  }
+  /* string 1, char 10 */
+  33.55856%,
+  34.45846% {
+    content: "探寻心跳的感觉 ";
+  }
+  /* string 1, char 11 */
+  34.45946%,
+  35.35936% {
+    content: "探寻心跳的感觉";
+  }
+  /* string 1, char 12 */
+  35.36036%,
+  36.26026% {
+    content: "探寻心跳的感";
+  }
+  /* string 1, char 13 */
+  36.26126%,
+  37.16116% {
+    content: "探寻心跳的";
+  }
+  /* string 1, char 14 */
+  37.16216%,
+  38.06206% {
+    content: "探寻心跳";
+  }
+  /* string 1, char 15 */
+  38.06306%,
+  38.96296% {
+    content: "探寻心";
+  }
+  /* string 1, char 16 */
+  38.96396%,
+  39.86386% {
+    content: "探寻";
+  }
+  /* string 1, char 17 */
+  39.86486%,
+  40.76477% {
+    content: "探";
+  }
+  /* string 1, char 18 */
+  40.76577%,
+  52.02603% {
+    content: "​";
+  }
+  /* string 2, char 1 */
+  52.02703%,
+  53.15215% {
+    content: "E";
+  }
+  /* string 2, char 2 */
+  53.15315%,
+  54.27828% {
+    content: "En";
+  }
+  /* string 2, char 3 */
+  54.27928%,
+  55.40441% {
+    content: "Enj";
+  }
+  /* string 2, char 4 */
+  55.40541%,
+  56.53053% {
+    content: "Enjo";
+  }
+  /* string 2, char 5 */
+  56.53153%,
+  57.65666% {
+    content: "Enjoy";
+  }
+  /* string 2, char 6 */
+  57.65766%,
+  58.78278% {
+    content: "Enjoy ";
+  }
+  /* string 2, char 7 */
+  58.78378%,
+  83.33233% {
+    content: "Enjoy ☕";
+  }
+  /* string 2, char 8 */
+  83.33333%,
+  84.23323% {
+    content: "Enjoy ";
+  }
+  /* string 2, char 9 */
+  84.23423%,
+  85.13414% {
+    content: "Enjoy";
+  }
+  /* string 2, char 10 */
+  85.13514%,
+  86.03504% {
+    content: "Enjo";
+  }
+  /* string 2, char 11 */
+  86.03604%,
+  86.93594% {
+    content: "Enj";
+  }
+  /* string 2, char 12 */
+  86.93694%,
+  87.83684% {
+    content: "En";
+  }
+  /* string 2, char 13 */
+  87.83784%,
+  88.73774% {
+    content: "E";
+  }
+  /* string 2, char 14 */
+  88.73874%,
+  100% {
+    content: "​";
+  }
+}
+
+@-webkit-keyframes beam-blink {
+  75% {
+    border-color: transparent;
+  }
+}
+
+@keyframes beam-blink {
+  75% {
+    border-color: transparent;
+  }
+}
+
+* {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+main .app-secTitle::after {
+  content: "​";
+  position: relative;
+  padding-right: 3px;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  white-space: nowrap;
+  -webkit-animation: typed 8.88s linear 1s infinite, beam-blink 1s infinite;
+  animation: typed 8.88s linear 1s infinite, beam-blink 1s infinite;
+}
+
+@media (max-width: 667px) {
+  main .app-secTitle::after {
+    content: "探寻心跳的感觉 ♥";
+  }
+}
+/*# sourceMappingURL=autoTyped_cn.css.map */
