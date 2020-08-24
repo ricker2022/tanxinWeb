@@ -14,7 +14,7 @@ div {display: block;}
 @media (max-width: 1199px){
     body{background:none #FF6687;}
     #dPageHolder{max-width:1200px;}
-    #DownloadBtn{position:absolute;top:0;left:0;margin-top: 135.5%;margin-left: 16.3%;width:67.629%;height:auto;padding:9.823% 0 0 0;background-size:contain;cursor:pointer;}
+    #DownloadBtn{position:absolute;top:0;left:0;margin-top: 135%;margin-left: 16.3%;width:67.629%;height:auto;padding:9.823% 0 0 0;background-size:contain;cursor:pointer;}
     #DownloadBtn:hover{background-size:contain;}
     /* .downloadBtn{position:absolute;top:0;margin-top: 97%;width:43.782%;background-position:top center;background-repeat:no-repeat;background-size:contain;cursor:pointer;} */
     .part1,.part2,.part3,.part4,.part5 {padding:0;margin:-1px 0 0;width:100%;height:auto;}
