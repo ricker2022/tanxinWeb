@@ -14,13 +14,13 @@ div {display: block;}
 @media (max-width: 1199px){
     body{background:none #FF6687;}
     #dPageHolder{max-width:1200px;}
-    #DownloadBtn{position:absolute;top:0;left:0;margin-top: 137%;margin-left: 16.3%;width:67.629%;height:auto;padding:9.823% 0 0 0;background-size:contain;cursor:pointer;}
+    #DownloadBtn{position:absolute;top:0;left:0;margin-top: 136%;margin-left: 16.3%;width:67.629%;height:auto;padding:9.823% 0 0 0;background-size:contain;cursor:pointer;}
     #DownloadBtn:hover{background-size:contain;}
     /* .downloadBtn{position:absolute;top:0;margin-top: 97%;width:43.782%;background-position:top center;background-repeat:no-repeat;background-size:contain;cursor:pointer;} */
     .part1,.part2,.part3,.part4,.part5 {padding:0;margin:-1px 0 0;width:100%;height:auto;}
-    .part1{background: url('http://cdn.tanxin.club/website/ad/img/h1.jpg') top center no-repeat;padding:35.024% 0 0;background-size:contain;}
-    .part2{background: url('http://cdn.tanxin.club/website/ad/img/h2.jpg') top center no-repeat;padding:35.024% 0 0;background-size:contain;}
-    .part3{background: url('http://cdn.tanxin.club/website/ad/img/h3.jpg') top center no-repeat;padding:35.024% 0 0;background-size:contain;}
-    .part4{background: url('http://cdn.tanxin.club/website/ad/img/h4.jpg') top center no-repeat;padding:35.024% 0 0;background-size:contain;}
-    .part5{background: url('http://cdn.tanxin.club/website/ad/img/h5.jpg') top center no-repeat;padding:35.024% 0 0;background-size:contain;}
+    .part1{background: url('../img/h1.jpg') top center no-repeat;padding:35.024% 0 0;background-size:contain;}
+    .part2{background: url('../img/h2.jpg') top center no-repeat;padding:35.024% 0 0;background-size:contain;}
+    .part3{background: url('../img/h3.jpg') top center no-repeat;padding:35.024% 0 0;background-size:contain;}
+    .part4{background: url('../img/h4.jpg') top center no-repeat;padding:35.024% 0 0;background-size:contain;}
+    .part5{background: url('../img/h5.jpg') top center no-repeat;padding:35.024% 0 0;background-size:contain;}
 }
