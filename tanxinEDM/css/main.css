@@ -17,9 +17,9 @@ div {display: block;}
     #DownloadBtn{position:absolute;top:0;left:0;margin-top: 124%;margin-left: 5.6%;width:88.726%;height:auto;padding:21.015% 0 0 0;background:url('http://cdn.tanxin.club/website/ad/img/downloadBtn_nor_h.png') top center no-repeat;background-size:contain;cursor:pointer;}
     #DownloadBtn:hover{background:url('http://cdn.tanxin.club/website/ad/img/downloadBtn_active_h.png') top center no-repeat;background-size:contain;}
     .part1,.part2,.part3,.part4,.part5 {padding:0;margin:-1px 0 0;width:100%;height:auto;}
-    .part1{background: url('http://cdn.tanxin.club/website/ad/img/h1.jpg') top center no-repeat;padding:33.856% 0 0;background-size:contain;}
-    .part2{background: url('http://cdn.tanxin.club/website/ad/img/h2.jpg') top center no-repeat;padding:33.856% 0 0;background-size:contain;}
-    .part3{background: url('http://cdn.tanxin.club/website/ad/img/h3.jpg') top center no-repeat;padding:33.856% 0 0;background-size:contain;}
-    .part4{background: url('http://cdn.tanxin.club/website/ad/img/h4.jpg') top center no-repeat;padding:33.856% 0 0;background-size:contain;}
-    .part5{background: url('http://cdn.tanxin.club/website/ad/img/h5.jpg') top center no-repeat;padding:33.856% 0 0;background-size:contain;}
+    .part1{background: url('http://cdn.tanxin.club/website/ad/img/h1.jpg?d=20200825') top center no-repeat;padding:33.856% 0 0;background-size:contain;}
+    .part2{background: url('http://cdn.tanxin.club/website/ad/img/h2.jpg?d=20200825') top center no-repeat;padding:33.856% 0 0;background-size:contain;}
+    .part3{background: url('http://cdn.tanxin.club/website/ad/img/h3.jpg?d=20200825') top center no-repeat;padding:33.856% 0 0;background-size:contain;}
+    .part4{background: url('http://cdn.tanxin.club/website/ad/img/h4.jpg?d=20200825') top center no-repeat;padding:33.856% 0 0;background-size:contain;}
+    .part5{background: url('http://cdn.tanxin.club/website/ad/img/h5.jpg?d=20200825') top center no-repeat;padding:33.856% 0 0;background-size:contain;}
 }
