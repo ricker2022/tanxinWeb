@@ -11,7 +11,7 @@ div {display: block;}
 .part5{background: url('http://cdn.tanxin.club/website/ad/img/5.jpg') top left no-repeat;}
 .preload{display:none;}
 
-@media (max-width: 1199px){
+@media (max-width: 1200px){
     body{background:none #FF6687;}
     #dPageHolder{max-width:1200px;}
     #DownloadBtn{position:absolute;top:0;left:0;margin-top: 124%;margin-left: 5.6%;width:88.726%;height:auto;padding:21.015% 0 0 0;background:url('http://cdn.tanxin.club/website/ad/img/downloadBtn_nor_h.png') top center no-repeat;background-size:contain;cursor:pointer;}
