@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta name="title" content="幸运60秒">
+		<meta name="description" content="幸运60秒">
+		<meta name="keywords" content="幸运60秒,公平,公正,全球同步,一注翻身,幸运,二元">
+		<meta property="og:title" content="幸运60秒">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="幸运60秒">
+		<link rel="shortcut icon" href="favicon.png" type="image/png">
+		<title>幸运60秒</title>
+		<link rel="stylesheet" href="ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css?d=20191102">
+		<!--[if lt IE 9]>
+			<script src="ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="dPageHolder">        	
+        	<div class="part1">
+            	<img class="img-responsive" src="img/1.jpg?d=20191118"/>
+        	</div>
+        	<div class="part2">
+            	<img class="img-responsive" src="img/2.jpg?d=20191118"/>
+        	</div>
+        	<div class="part3">
+            	<img class="img-responsive" src="img/3.jpg?d=20191118"/>
+        	</div>
+        	<div class="part4">
+            	<img class="img-responsive" src="img/4-1.jpg?d=20191102"/>
+        	</div>
+        	<div class="part5">
+            	<img class="img-responsive" src="img/5.jpg?d=20191118"/>            	
+        	</div>
+        	<!-- 单颗按钮 -->
+        	<div id="DownloadBtn" class="downloadBtn" href="javascript:;" title="按此下载"></div>
+
+        	<!-- 双颗按钮 -->
+        	<!-- <div id="DownloadBtn_APK" class="downloadBtn" href="javascript:;" title="按此下载"></div>
+        	<div id="DownloadBtn_iOS" class="downloadBtn" href="javascript:;" title="按此下载"></div> -->
+
+        	<div class="preload">
+        		<img src="img/downloadBtn_active.png">
+        	</div>
+    	</div>
+			
+		<script src="jquery.js"></script>
+		<script src="ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				// only APK or APK AND iOS
+				$(".downloadBtn").click(function(){
+					var name = this.id;
+					var src = 'lucky60.apk';
+
+					if(name == "DownloadBtn" || name=="DownloadBtn_APK"){
+						src='lucky60.apk';
+					}else{
+						src='lucky60.ipa';
+					}
+
+					var iframe = document.createElement('iframe');
+					iframe.style.display = 'none';
+					iframe.src = "javascript: '<script>location.href=\"" + src + "\"<\/script>'";
+					document.getElementsByTagName('body')[0].appendChild(iframe);
+				});
+
+				var fileNum = 1;
+				setInterval(autoRun, 3000);
+
+				function autoRun() {
+					if (fileNum < 3) {
+						fileNum += 1;
+					} else {
+						fileNum = 1;
+					}
+					$('.part4 img').attr("src",'img/4-' + fileNum + '.jpg?d=20191118');
+				}
+			})
+		</script>
+	</body>
+</html>
