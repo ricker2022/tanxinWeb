@@ -1,19 +1,18 @@
 body {background:url('http://cdn.tanxin.club/website/ad/img/bg.jpg') top center no-repeat #FF6687;margin: 0 auto;}
 div {display: block;}
-@media (min-width: 1200px){
-    #dPageHolder {position: relative;width:100%;max-width: 1200px;margin: 0 auto;z-index: 0;}
-    #DownloadBtn{position:absolute;top: 846px;left: 198px;width:809px;height:104px;background:url('http://cdn.tanxin.club/website/ad/img/downloadBtn_nor.png?d=20200825') top center no-repeat;cursor:pointer;}
-    #DownloadBtn:hover{background-image:url('http://cdn.tanxin.club/website/ad/img/downloadBtn_active.png?d=20200825');}
-    .part1,.part2,.part3,.part4,.part5 {float: left;height: auto;width:100%;height:216px;}
-    .part1{background: url('http://cdn.tanxin.club/website/ad/img/1.jpg') top left no-repeat;}
-    .part2{background: url('http://cdn.tanxin.club/website/ad/img/2.jpg') top left no-repeat;}
-    .part3{background: url('http://cdn.tanxin.club/website/ad/img/3.jpg') top left no-repeat;}
-    .part4{background: url('http://cdn.tanxin.club/website/ad/img/4.jpg') top left no-repeat;}
-    .part5{background: url('http://cdn.tanxin.club/website/ad/img/5.jpg') top left no-repeat;}
-    .preload{display:none;}
-    #weixin-tip {display: none;position: fixed;left: 0;top: 0;bottom: 0;background: rgba(0, 0, 0, 0.8);filter: alpha(opacity=80);height: 100%;width: 100%;z-index: 9999;}
-    #live_img{width: 90%;height: auto;margin: 10px 5% 0;}
-}
+#dPageHolder {position: relative;width:100%;max-width: 1200px;margin: 0 auto;z-index: 0;}
+#DownloadBtn{position:absolute;top: 846px;left: 198px;width:809px;height:104px;background:url('http://cdn.tanxin.club/website/ad/img/downloadBtn_nor.png?d=20200825') top center no-repeat;cursor:pointer;}
+#DownloadBtn:hover{background-image:url('http://cdn.tanxin.club/website/ad/img/downloadBtn_active.png?d=20200825');}
+.part1,.part2,.part3,.part4,.part5 {float: left;height: auto;width:100%;height:216px;}
+.part1{background: url('http://cdn.tanxin.club/website/ad/img/1.jpg') top left no-repeat;}
+.part2{background: url('http://cdn.tanxin.club/website/ad/img/2.jpg') top left no-repeat;}
+.part3{background: url('http://cdn.tanxin.club/website/ad/img/3.jpg') top left no-repeat;}
+.part4{background: url('http://cdn.tanxin.club/website/ad/img/4.jpg') top left no-repeat;}
+.part5{background: url('http://cdn.tanxin.club/website/ad/img/5.jpg') top left no-repeat;}
+.preload{display:none;}
+#weixin-tip {display: none;position: fixed;left: 0;top: 0;bottom: 0;background: rgba(0, 0, 0, 0.8);filter: alpha(opacity=80);height: 100%;width: 100%;z-index: 9999;}
+#live_img{width: 90%;height: auto;margin: 10px 5% 0;}
+
 @media (max-width: 1200px){
     body{background:none #FF6687;}
     #dPageHolder{max-width:1200px;}
@@ -25,6 +24,4 @@ div {display: block;}
     .part3{background: url('http://cdn.tanxin.club/website/ad/img/h3.jpg?d=20200825') top center no-repeat;padding:33.834% 0 0;background-size:contain;}
     .part4{background: url('http://cdn.tanxin.club/website/ad/img/h4.jpg?d=20200825') top center no-repeat;padding:33.834% 0 0;background-size:contain;}
     .part5{background: url('http://cdn.tanxin.club/website/ad/img/h5.jpg?d=20200825') top center no-repeat;padding:33.834% 0 0;background-size:contain;}
-    #weixin-tip {display: none;position: fixed;left: 0;top: 0;bottom: 0;background: rgba(0, 0, 0, 0.8);filter: alpha(opacity=80);height: 100%;width: 100%;z-index: 9999;}
-    #live_img{width: 90%;height: auto;margin: 10px 5% 0;}
 }
