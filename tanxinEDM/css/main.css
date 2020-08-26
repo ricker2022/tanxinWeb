@@ -10,6 +10,8 @@ div {display: block;}
 .part4{background: url('http://cdn.tanxin.club/website/ad/img/4.jpg') top left no-repeat;}
 .part5{background: url('http://cdn.tanxin.club/website/ad/img/5.jpg') top left no-repeat;}
 .preload{display:none;}
+#weixin-tip {display: none;position: fixed;left: 0;top: 0;bottom: 0;background: rgba(0, 0, 0, 0.8);filter: alpha(opacity=80);height: 100%;width: 100%;z-index: 9999;}
+#live_img{width: 90%;height: auto;margin: 10px 5% 0;}
 
 @media (max-width: 1200px){
     body{background:none #FF6687;}
